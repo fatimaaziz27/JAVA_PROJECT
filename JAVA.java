@@ -65,19 +65,19 @@ class hospital{
 }
 
     void display_info(){
-        if (patient_name.containskey(id) == true){
-        }
+        // if (patient_name.containskey(id) == true){
+        // }
     }
     void add_patient(){
+        
         Scanner sc = new Scanner(System.in);
         System.out.println("Do you want to add patient? (yes/no): ");
         int add = sc.nextInt();
-        if (add == "")
-        Scanner sc = new Scanner(System.in);
+        if (add.equals("yes"))
         System.out.println("Enter patient ID: ");
         int id = sc.nextInt();
 
-         
+    
     
     }
     void view_all_paitents(){
