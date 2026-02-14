@@ -51,11 +51,6 @@ class hospital{
     String disease;
     String emergency_status;
     
-    HashMap<Integer,String> patient_names = new HashMap<>();
-    HashMap<Integer,Integer> patient_age = new HashMap<>();
-    HashMap<Integer,String> patient_disease = new HashMap<>();
-    HashMap<Integer,String> patient_emergency_status = new HashMap<>();
-    
     hospital(String name,Integer age,String disease,String emergency_status){
         this.name = name;
         this.age = age;
@@ -64,22 +59,53 @@ class hospital{
     }
 }
 
-    void display_info(){
-        // if (patient_name.containskey(id) == true){
-        // }
-    }
     void add_patient(){
-        
+
+        HashMap<Integer,String> patient_names = new HashMap<>();
+        HashMap<Integer,Integer> patient_age = new HashMap<>();
+        HashMap<Integer,String> patient_disease = new HashMap<>();
+        HashMap<Integer,String> patient_emergency_status = new HashMap<>();
+    
         Scanner sc = new Scanner(System.in);
         System.out.println("Do you want to add patient? (yes/no): ");
-        int add = sc.nextInt();
+        String add = sc.nextLine();
+        
+        System.out.println("Enter patient id: ");
+        int id = sc.nextInt();
+        
         if (add.equals("yes"))
+        
+            System.out.println("Enter patient name: ");
+            String name = sc.nextLine();
+            patient_names.put(id,name);
+
+            System.out.println("Enter patient age: ");
+            int age = sc.nextInt();
+            patient_age.put(id,age);
+
+            System.out.println("Enter patient disease: ");
+            String disease = sc.nextLine();
+            patient_disease.put(id,disease);
+
+            System.out.println("Emergency? (yes/no): ");
+            String emg = sc.nextLine();
+            patient_names.put(id,emg);
+
+    }
+
+    void display_info(){
+        
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter patient ID: ");
         int id = sc.nextInt();
-
-    
-    
+        
+        if (patient_name.containskey(id) == true){
+            System.out.println("Name: " + patient_name.get(id) +
+            "Age: " + patient_age.get(id) 
+            + "Disease: " + patient_disease.get(id) +"Emergency Status"+ patient_emergency_status.get(id)_
+        }
     }
+
     void view_all_paitents(){
 
     }
