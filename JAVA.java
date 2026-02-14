@@ -17,6 +17,15 @@ import java.util.*;
 //Use HashMap to store the collection of books in the library class.
 //Key: Patient Nowe, Value: Patient Object
 
+class JAVA{
+    public static void main(String[]args){
+        hospital h1 = new hospital("b",2,"f","j");
+        h1.add_patient();
+
+    }
+}
+
+
 class hospital{
     String name;
     Integer age;
@@ -45,7 +54,7 @@ class hospital{
         System.out.println("Enter patient id: ");
         int id = sc.nextInt();
         
-        if (add.equals("yes"))
+        if (add.equals("yes")){
         
             System.out.println("Enter patient name: ");
             String name = sc.nextLine();
@@ -62,73 +71,88 @@ class hospital{
             System.out.println("Emergency? (yes/no): ");
             String emg = sc.nextLine();
             patient_names.put(id,emg);
-
     }
+}
 
 
 
-    void display_info(){
+    // void display_info(){
         
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter patient ID: ");
-        int id = sc.nextInt();
+    //     Scanner sc = new Scanner(System.in);
+    //     System.out.println("Enter patient ID: ");
+    //     int id = sc.nextInt();
         
-        if (patient_name.containskey(id) == true){
+    //     if (patient_name.containskey(id) == true){
 
-            System.out.println(
-            "Patient Info: \nName: " + patient_name.get(id)
-            +"\nAge: " + patient_age.get(id) 
-            + "\nDisease: " + patient_disease.get(id) 
-            + "\nEmergency Status: " + patient_emergency_status.get(id));
-        }
-        else{
-            System.out.print("Invalid ID");
-        }
-    }
+    //         System.out.println(
+    //         "Patient Info: \nName: " + patient_name.get(id)
+    //         +"\nAge: " + patient_age.get(id) 
+    //         + "\nDisease: " + patient_disease.get(id) 
+    //         + "\nEmergency Status: " + patient_emergency_status.get(id));
+    //     }
 
-
-
-    void view_all_paitents(){
-
-        for (int i=0; patient_name.size<i; i++){
-            System.out.println("Patient:" + "\nName: " + patient_name.get(i));
-        }
-
-    }
+    //     else{
+    //         System.out.print("Invalid ID");
+    //     }
+    // }
 
 
 
-    void display_a_paitent(){ 
+    // void view_all_paitents(){
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter patient name: ");
-        String name = sc.nextLine();
-        if (patient_name.containskey(name) == true)
-        System.out.println(
-            "Patient Info:"
-            +"\nName: " + patient_name.get(i)
-            +"\nAge: " + patient_age.get(i) 
-            + "\nDisease: " + patient_disease.get(i) 
-            + "\nEmergency Status: " + patient_emergency_status.get(i));
-        }
+    //     for (int i=0; patient_name.size<i; i++){
+    //         System.out.println("Patient:" + "\nName: " + patient_name.get(i));
+    //     }
+
+    // }
 
 
 
-    void chg_patients_emg(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter patient ID: ");
-        Integer id = sc.nextInt();
-        if (patient_emergency_status.containskey(id) == true){
-            if (id.equals("yes")){
-                patient_emergency_status.put(id,"No");
-            }
-            else if (id.equals("no")){
-                patient_emergency_status.put(id,"yes");
-            }
-        }
-        else{
+    // void display_a_paitent(){ 
+
+    //     Scanner sc = new Scanner(System.in);
+    //     System.out.println("Enter patient name: ");
+    //     String name = sc.nextLine();
+
+    //     if (patient_name.containskey(name) == true)
+
+    //         System.out.println(
+    //         "Patient Info:"
+    //         +"\nName: " + patient_name.get(i)
+    //         +"\nAge: " + patient_age.get(i) 
+    //         + "\nDisease: " + patient_disease.get(i) 
+    //         + "\nEmergency Status: " + patient_emergency_status.get(i));
+
+    // }
+
+    // void chg_patients_emg(){
+        
+    //     Scanner sc = new Scanner(System.in);
+    //     System.out.println("Enter patient ID: ");
+    //     Integer id = sc.nextInt();
+        
+    //     if (patient_emergency_status.containskey(id) == true){
             
-        }
+    //         if (id.equals("yes")){
+    //             patient_emergency_status.put(id,"No");
+    //         }
+            
+    //         else if (id.equals("no")){
+    //             patient_emergency_status.put(id,"yes");
+    //         }
+    //     }
         
-    }
+    //     else{
+    //         System.out.print("Invalid ID");
+    //     }
+    // }
 
+
+
+
+
+
+
+
+
+    
