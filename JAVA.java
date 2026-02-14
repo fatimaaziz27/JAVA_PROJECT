@@ -118,8 +118,16 @@ class hospital{
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter patient ID: ");
         Integer id = sc.nextInt();
-        if (patient_.containskey(id) == true){
-
+        if (patient_emergency_status.containskey(id) == true){
+            if (id.equals("yes")){
+                patient_emergency_status.put(id,"No");
+            }
+            else if (id.equals("no")){
+                patient_emergency_status.put(id,"yes");
+            }
+        }
+        else{
+            
         }
         
     }
