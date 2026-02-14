@@ -1,5 +1,7 @@
-    // Question:
-    // hospital management system in java
+import java.util.*;
+
+// Question:
+// hospital management system in java
 //create a simple hospital management system using oop concepts in Java
 // The system should allow users to odd patients, discharge a patients, display a patient
 // and change patient emergency
@@ -14,9 +16,6 @@
  //Hints:
 //Use HashMap to store the collection of books in the library class.
 //Key: Patient Nowe, Value: Patient Object
-
-import java.util.HashMap;
-import java.util.Scanner;
 
 class hospital{
     String name;
@@ -66,6 +65,8 @@ class hospital{
 
     }
 
+
+
     void display_info(){
         
         Scanner sc = new Scanner(System.in);
@@ -85,6 +86,8 @@ class hospital{
         }
     }
 
+
+
     void view_all_paitents(){
 
         for (i){
@@ -92,6 +95,9 @@ class hospital{
         }
 
     }
+
+
+
     void display_a_paitent(){ 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter patient ID: ");
@@ -104,6 +110,9 @@ class hospital{
             + "\nDisease: " + patient_disease.get(i) 
             + "\nEmergency Status: " + patient_emergency_status.get(i));
         }
+
+
+        
     void chg_patients_emg(){
 
     }
