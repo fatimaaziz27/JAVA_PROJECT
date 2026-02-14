@@ -155,4 +155,60 @@ class hospital{
 
 
 
+// import java.util.*;
+// class JAVA{
+//     public static void main(String[]args){
+//         hospital h1 = new hospital("b",2,"f","j");
+//         h1.add_patient();
+//     }
+// }
+// class hospital{
+//     String name;
+//     Integer age;
+//     String disease;
+//     String emergency_status;
     
+//     hospital(String name,Integer age,String disease,String emergency_status){
+//         this.name = name;
+//         this.age = age;
+//         this.disease = disease;
+//         this.emergency_status = emergency_status;
+//     }
+
+//     void add_patient(){
+
+//         HashMap<Integer,String> patient_names = new HashMap<>();
+//         HashMap<Integer,Integer> patient_age = new HashMap<>();
+//         HashMap<Integer,String> patient_disease = new HashMap<>();
+//         HashMap<Integer,String> patient_emergency_status = new HashMap<>();
+    
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Do you want to add patient? (yes/no): ");
+//         String add = sc.nextLine();
+        
+//         System.out.println("Enter patient id: ");
+//         int id = sc.nextInt();
+        
+//         if (add.equals("yes")){
+        
+//             System.out.println("Enter patient name: ");
+//             String name = sc.nextLine();
+//             patient_names.put(id,name);
+
+//             System.out.println("Enter patient age: ");
+//             int age = sc.nextInt();
+//             patient_age.put(id,age);
+
+//             System.out.println("Enter patient disease: ");
+//             String disease = sc.nextLine();
+//             patient_disease.put(id,disease);
+
+//             System.out.println("Emergency? (yes/no): ");
+//             String emg = sc.nextLine();
+//             patient_names.put(id,emg);
+//         }
+//         System.out.println(patient_names);
+//         System.out.println(patient_age);
+//         System.out.println(patient_disease);
+//         System.out.println(patient_emergency_status);
+//     }}
