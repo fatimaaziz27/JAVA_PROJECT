@@ -14,37 +14,10 @@
  //Hints:
 //Use HashMap to store the collection of books in the library class.
 //Key: Patient Nowe, Value: Patient Object
-import java.util.*;
-class RAW_FILE_PRICE_CHECKER {
-    public static void main(String[] args) {
 
-        HashMap<String, Integer> PRODUCT_DICTIONARY = new HashMap<>();
-        PRODUCT_DICTIONARY.put("PN1", 1);
-        PRODUCT_DICTIONARY.put("PN2", 2);
-        PRODUCT_DICTIONARY.put("PN3", 3);
-        PRODUCT_DICTIONARY.put("PN4", 4);
-        PRODUCT_DICTIONARY.put("PN5", 5);
-        PRODUCT_DICTIONARY.put("PN6", 6);
-        System.out.println(PRODUCT_DICTIONARY);
+import java.util.HashMap;
+import java.util.Scanner;
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter product name (or 'quit' to stop):");
-        String p_n = scanner.nextLine();
-
-        if(p_n.equals("quit") || p_n.equals("stop")){
-            System.out.println("Program terminated by user.");
-        }
-        else if(PRODUCT_DICTIONARY.containsKey(p_n)) {
-            System.out.println("Product:" + p_n + "\nProduct Price:" + PRODUCT_DICTIONARY.get(p_n));
-        }
-        else {
-            System.out.println("Product is not available");
-        }
-}
-}
-class JAVA {
-
-}
 class hospital{
     String name;
     Integer age;
@@ -114,12 +87,23 @@ class hospital{
 
     void view_all_paitents(){
 
-        for 
+        for (i){
+            System.out.println("Patient:" + "\nName: " + patient_name.get(i));
+        }
 
     }
-    void display_a_paitent(){
-
-    }
+    void display_a_paitent(){ 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter patient ID: ");
+        int id = sc.nextInt();
+        
+        System.out.println(
+            "Patient Info:"
+            +"\nName: " + patient_name.get(i)
+            +"\nAge: " + patient_age.get(i) 
+            + "\nDisease: " + patient_disease.get(i) 
+            + "\nEmergency Status: " + patient_emergency_status.get(i));
+        }
     void chg_patients_emg(){
 
     }
