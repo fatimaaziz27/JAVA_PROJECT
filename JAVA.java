@@ -100,13 +100,21 @@ class hospital{
         int id = sc.nextInt();
         
         if (patient_name.containskey(id) == true){
-            System.out.println("Name: " + patient_name.get(id) +
-            "Age: " + patient_age.get(id) 
-            + "Disease: " + patient_disease.get(id) +"Emergency Status"+ patient_emergency_status.get(id)_
+
+            System.out.println(
+            "Patient Info: \nName: " + patient_name.get(id)
+            +"\nAge: " + patient_age.get(id) 
+            + "\nDisease: " + patient_disease.get(id) 
+            + "\nEmergency Status: " + patient_emergency_status.get(id));
+        }
+        else{
+            System.out.print("Invalid ID");
         }
     }
 
     void view_all_paitents(){
+
+        for 
 
     }
     void display_a_paitent(){
