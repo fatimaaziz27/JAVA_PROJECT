@@ -90,7 +90,7 @@ class hospital{
 
     void view_all_paitents(){
 
-        for (i){
+        for (int i=0; patient_name.size<i; i++){
             System.out.println("Patient:" + "\nName: " + patient_name.get(i));
         }
 
@@ -99,10 +99,11 @@ class hospital{
 
 
     void display_a_paitent(){ 
+
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter patient ID: ");
-        int id = sc.nextInt();
-        
+        System.out.println("Enter patient name: ");
+        String name = sc.nextLine();
+        if (patient_name.containskey(name) == true)
         System.out.println(
             "Patient Info:"
             +"\nName: " + patient_name.get(i)
@@ -112,8 +113,14 @@ class hospital{
         }
 
 
-        
-    void chg_patients_emg(){
 
+    void chg_patients_emg(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter patient ID: ");
+        Integer id = sc.nextInt();
+        if (patient_.containskey(id) == true){
+
+        }
+        
     }
 
