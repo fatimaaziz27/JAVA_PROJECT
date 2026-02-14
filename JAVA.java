@@ -14,7 +14,34 @@
  //Hints:
 //Use HashMap to store the collection of books in the library class.
 //Key: Patient Nowe, Value: Patient Object
+import java.util.*;
+class RAW_FILE_PRICE_CHECKER {
+    public static void main(String[] args) {
 
+        HashMap<String, Integer> PRODUCT_DICTIONARY = new HashMap<>();
+        PRODUCT_DICTIONARY.put("PN1", 1);
+        PRODUCT_DICTIONARY.put("PN2", 2);
+        PRODUCT_DICTIONARY.put("PN3", 3);
+        PRODUCT_DICTIONARY.put("PN4", 4);
+        PRODUCT_DICTIONARY.put("PN5", 5);
+        PRODUCT_DICTIONARY.put("PN6", 6);
+        System.out.println(PRODUCT_DICTIONARY);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter product name (or 'quit' to stop):");
+        String p_n = scanner.nextLine();
+
+        if(p_n.equals("quit") || p_n.equals("stop")){
+            System.out.println("Program terminated by user.");
+        }
+        else if(PRODUCT_DICTIONARY.containsKey(p_n)) {
+            System.out.println("Product:" + p_n + "\nProduct Price:" + PRODUCT_DICTIONARY.get(p_n));
+        }
+        else {
+            System.out.println("Product is not available");
+        }
+}
+}
 class JAVA {
 
 }
@@ -23,17 +50,35 @@ class hospital{
     Integer age;
     String disease;
     String emergency_status;
+    
+    HashMap<Integer,String> patient_names = new HashMap<>();
+    HashMap<Integer,Integer> patient_age = new HashMap<>();
+    HashMap<Integer,String> patient_disease = new HashMap<>();
+    HashMap<Integer,String> patient_emergency_status = new HashMap<>();
+    
     hospital(String name,Integer age,String disease,String emergency_status){
         this.name = name;
         this.age = age;
         this.disease = disease;
         this.emergency_status = emergency_status;
     }
+}
+
     void display_info(){
-        System.out.println();
+        if (patient_name.containskey(id) == true){
+        }
     }
     void add_patient(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Do you want to add patient? (yes/no): ");
+        int add = sc.nextInt();
+        if (add == "")
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter patient ID: ");
+        int id = sc.nextInt();
 
+         
+    
     }
     void view_all_paitents(){
 
@@ -45,4 +90,3 @@ class hospital{
 
     }
 
-}
