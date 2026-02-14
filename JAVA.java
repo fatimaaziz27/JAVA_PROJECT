@@ -237,8 +237,7 @@ class hospital{
         this.age = age;
         this.disease = disease;
         this.emergency_status = emergency_status;
-    }
-    void dict(){
+        
         HashMap<Integer,String> patient_names = new HashMap<>();
         HashMap<Integer,Integer> patient_age = new HashMap<>();
         HashMap<Integer,String> patient_disease = new HashMap<>();
@@ -312,8 +311,6 @@ class view_all_paitents extends hospital{
         }
     }
 }
-
-
 
 class display_a_paitent extends hospital{ 
 
