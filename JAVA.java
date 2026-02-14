@@ -212,3 +212,11 @@ class hospital{
 //         System.out.println(patient_disease);
 //         System.out.println(patient_emergency_status);
 //     }}
+
+
+
+
+
+
+
+
