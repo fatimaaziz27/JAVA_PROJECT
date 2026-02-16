@@ -34,6 +34,12 @@ class JAVA{
     }
     }
  }
+class hospital {
+
+     HashMap<Integer, String> patient_names = new HashMap<>();
+     HashMap<Integer, Integer> patient_age = new HashMap<>();
+     HashMap<Integer, String> patient_disease = new HashMap<>();
+     HashMap<Integer, String> patient_emergency_status = new HashMap<>();
 
 
 
