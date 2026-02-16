@@ -42,6 +42,43 @@ class hospital {
      HashMap<Integer, String> patient_emergency_status = new HashMap<>();
 
 
+     void add_patient() {
+
+         Scanner sc = new Scanner(System.in);
+         System.out.println("Do you want to add patient? (yes/no): ");
+         String add = sc.nextLine();
+
+         if (add.equals("yes")) {
+
+             System.out.println("Enter patient id: ");
+             int id = sc.nextInt();
+             sc.nextLine();
+
+             System.out.println("Enter patient name: ");
+             String name = sc.nextLine();
+             patient_names.put(id, name);
+
+             System.out.println("Enter patient age: ");
+             int age = sc.nextInt();
+             patient_age.put(id, age);
+             sc.nextLine();
+
+             System.out.println("Enter patient disease: ");
+             String disease = sc.nextLine();
+             patient_disease.put(id, disease);
+
+             System.out.println("Emergency? (yes/no): ");
+             String emg = sc.nextLine();
+             patient_emergency_status.put(id, emg);
+
+             System.out.println(patient_names);
+             System.out.println(patient_age);
+             System.out.println(patient_disease);
+             System.out.println(patient_emergency_status);
+         }
+     }
+
+     
 
 
 
