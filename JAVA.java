@@ -78,7 +78,23 @@ class hospital {
          }
      }
 
-     
+     void display_info() {
+
+         Scanner sc = new Scanner(System.in);
+         System.out.println("Enter patient ID: ");
+         int id = sc.nextInt();
+
+         if (patient_names.containsKey(id) == true) {
+
+             System.out.println(
+                     "Patient Info: \nName: " + patient_names.get(id)
+                             + "\nAge: " + patient_age.get(id)
+                             + "\nDisease: " + patient_disease.get(id)
+                             + "\nEmergency Status: " + patient_emergency_status.get(id));
+         } else {
+             System.out.println("Invalid ID");
+         }
+     }
 
 
 
