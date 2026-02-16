@@ -1,5 +1,31 @@
 import java.util.*;
 
+
+
+class JAVA{
+     public static void main(String[]args){
+         hospital h1 = new hospital();
+    while (true) {
+    System.out.println("1.Add patient\n2.Display Info\n3.Change Patients Emergency");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Question:
 // hospital management system in java
 //create a simple hospital management system using oop concepts in Java
