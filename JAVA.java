@@ -8,6 +8,21 @@ class JAVA{
     while (true) {
     System.out.println("1.Add patient\n2.Display Info\n3.Change Patients Emergency");
 
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Select a option");
+    Integer options = sc.nextInt();
+
+    switch (options) {
+        case 1:
+            h1.add_patient();
+            break;
+        case 2:
+            h1.display_info();
+            break;
+        case 3:
+            h1.chg_patients_emg();
+            break;
+    }
 
 
 
