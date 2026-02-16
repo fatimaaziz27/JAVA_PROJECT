@@ -24,6 +24,16 @@ class JAVA{
             break;
     }
 
+    System.out.println("Do ypu want to continue (yes/no) ?");
+    sc.nextLine();
+    String choice = sc.nextLine().toLowerCase();
+    if (choice.equals("no")) {
+        break;
+
+    }
+    }
+    }
+ }
 
 
 
