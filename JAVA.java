@@ -1,10 +1,7 @@
 import java.util.*;
-
-
-
 class JAVA{
-     public static void main(String[]args){
-         hospital h1 = new hospital();
+    public static void main(String[]args){
+        hospital h1 = new hospital();
     while (true) {
     System.out.println("1.Add patient\n2.Display Info\n3.Change Patients Emergency");
 
@@ -32,88 +29,90 @@ class JAVA{
     }
     }
     }
- }
+}
 class hospital {
 
-     HashMap<Integer, String> patient_names = new HashMap<>();
-     HashMap<Integer, Integer> patient_age = new HashMap<>();
-     HashMap<Integer, String> patient_disease = new HashMap<>();
-     HashMap<Integer, String> patient_emergency_status = new HashMap<>();
+    HashMap<Integer, String> patient_names = new HashMap<>();
+    HashMap<Integer, Integer> patient_age = new HashMap<>();
+    HashMap<Integer, String> patient_disease = new HashMap<>();
+    HashMap<Integer, String> patient_emergency_status = new HashMap<>();
 
 
-     void add_patient() {
+    void add_patient() {
 
-         Scanner sc = new Scanner(System.in);
-         System.out.println("Do you want to add patient? (yes/no): ");
-         String add = sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Do you want to add patient? (yes/no): ");
+        String add = sc.nextLine();
 
-         if (add.equals("yes")) {
+        if (add.equals("yes")) {
 
-             System.out.println("Enter patient id: ");
-             int id = sc.nextInt();
-             sc.nextLine();
+            System.out.println("Enter patient id: ");
+            int id = sc.nextInt();
+            sc.nextLine();
 
-             System.out.println("Enter patient name: ");
-             String name = sc.nextLine();
-             patient_names.put(id, name);
+            System.out.println("Enter patient name: ");
+            String name = sc.nextLine();
+            patient_names.put(id, name);
 
-             System.out.println("Enter patient age: ");
-             int age = sc.nextInt();
-             patient_age.put(id, age);
-             sc.nextLine();
+            System.out.println("Enter patient age: ");
+            int age = sc.nextInt();
+            patient_age.put(id, age);
+            sc.nextLine();
 
-             System.out.println("Enter patient disease: ");
-             String disease = sc.nextLine();
-             patient_disease.put(id, disease);
+            System.out.println("Enter patient disease: ");
+            String disease = sc.nextLine();
+            patient_disease.put(id, disease);
 
-             System.out.println("Emergency? (yes/no): ");
-             String emg = sc.nextLine();
-             patient_emergency_status.put(id, emg);
+            System.out.println("Emergency? (yes/no): ");
+            String emg = sc.nextLine();
+            patient_emergency_status.put(id, emg);
 
-             System.out.println(patient_names);
-             System.out.println(patient_age);
-             System.out.println(patient_disease);
-             System.out.println(patient_emergency_status);
-         }
-     }
+            System.out.println(patient_names);
+            System.out.println(patient_age);
+            System.out.println(patient_disease);
+            System.out.println(patient_emergency_status);
+        }
+    }
 
-     void display_info() {
+    void display_info() {
 
-         Scanner sc = new Scanner(System.in);
-         System.out.println("Enter patient ID: ");
-         int id = sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter patient ID: ");
+        int id = sc.nextInt();
 
-         if (patient_names.containsKey(id) == true) {
+        if (patient_names.containsKey(id) == true) {
 
-             System.out.println(
-                     "Patient Info: \nName: " + patient_names.get(id)
-                             + "\nAge: " + patient_age.get(id)
-                             + "\nDisease: " + patient_disease.get(id)
-                             + "\nEmergency Status: " + patient_emergency_status.get(id));
-         } else {
-             System.out.println("Invalid ID");
-         }
-     }
+            System.out.println(
+                    "Patient Info: \nName: " + patient_names.get(id)
+                            + "\nAge: " + patient_age.get(id)
+                            + "\nDisease: " + patient_disease.get(id)
+                            + "\nEmergency Status: " + patient_emergency_status.get(id));
+        }
+        
+        else {
+            System.out.println("Invalid ID");
+        }
+    }
 
-     void chg_patients_emg() {
+    void chg_patients_emg() {
 
-         Scanner sc = new Scanner(System.in);
-         System.out.println("Enter patient ID: ");
-         Integer id = sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter patient ID: ");
+        Integer id = sc.nextInt();
 
-         if (patient_emergency_status.containsKey(id) == true) {
+        if (patient_emergency_status.containsKey(id) == true) {
 
-             if (id.equals("yes")) {
-                 patient_emergency_status.put(id, "No");
-             }
-             else if (id.equals("no")) {
-                 patient_emergency_status.put(id, "yes");
-             }
-         } else {
-             System.out.print("Invalid ID");
-         }
-     }
- }
+            if (id.equals("yes")) {
+                patient_emergency_status.put(id, "No");
+            }
+            else if (id.equals("no")) {
+                patient_emergency_status.put(id, "yes");
+            }
+        } else {
+            System.out.print("Invalid ID");
+        }
+    }
+}
 
 
 
