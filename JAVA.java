@@ -145,6 +145,9 @@ class hospital {
 //Use HashMap to store the collection of books in the library class.
 //Key: Patient Nowe, Value: Patient Object
 
+
+
+
 // class JAVA{
 //     public static void main(String[]args){
 //         hospital h1 = new hospital("b",2,"f","j");
