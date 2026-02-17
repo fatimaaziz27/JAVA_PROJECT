@@ -99,24 +99,16 @@ class hospital {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter patient ID: ");
         Integer id = sc.nextInt();
-
-        if (patient_emergency_status.containsKey(id) == true) {
-
-            if (id.equals("yes")) {
+        String emg = patient_emergency_status.get(id);
+        if (emg.equals(true)) {
                 patient_emergency_status.put(id, "No");
             }
-            else if (id.equals("no")) {
-                patient_emergency_status.put(id, "yes");
-            }
-        } else {
-            System.out.print("Invalid ID");
+        else {
+            patient_emergency_status.put(id, "yes");
+            
         }
     }
 }
-
-
-
-
 
 
 
